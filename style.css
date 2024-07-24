@@ -1,0 +1,25 @@
+#enviar {
+  color:aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loggin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img {
+  width: 500px;
+  margin: 25px;
+}
+
+#etiquetasesion{
+  color:white;
+  background-color: rgb(145, 51, 8);
+  padding: 10px 15px; /* Espacio interno: 10px arriba/abajo y 15px izquierda/derecha */
+}
