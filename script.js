@@ -4,7 +4,7 @@ function iniciarCuestionario(){
 }
 function seleccionarRespuesta(){
     let pregunta1, pregunta2, pregunta3, pregunta4, pregunta5
-    let puntaje = 0
+    let puntaje = 20
     let inputrespuestauno=document.getElementById('1')
     let inputrespuestados=document.getElementById('2')
     let inputrespuestatres=document.getElementById('3')
@@ -32,7 +32,7 @@ function seleccionarRespuesta(){
         document.getElementById("correcta1").style.background = "#8aff7ace"
         pregunta1 = 1
     } else if (inputrespuestatres.checked) {
-        puntaje = puntaje + 2
+        puntaje = puntaje + 16
         pregunta1 = 1
     } else if (inputrespuestacuatro.checked) {
         document.getElementById("correcta1").style.background = "#8aff7ace"
@@ -44,7 +44,7 @@ function seleccionarRespuesta(){
         document.getElementById("correcta2").style.background = "#8aff7ace"
         pregunta2 = 1
     } else if (inputrespuestadosdos.checked) {
-        puntaje = puntaje + 2
+        puntaje = puntaje + 16
         pregunta2 = 1
     } else if (inputrespuestadostres.checked) {
         document.getElementById("correcta2").style.background = "#8aff7ace"
@@ -56,10 +56,10 @@ function seleccionarRespuesta(){
         alert("Responde la pregunta 2")
     }
     if (inputrespuestatresuno.checked) {
-        document.getElementById("correcta3").style.background = "#8aff7ace"
+        puntaje = puntaje + 16
         pregunta3 = 1
     } else if (inputrespuestatresdos.checked) {
-        puntaje = puntaje + 2
+        document.getElementById("correcta3").style.background = "#8aff7ace"
         pregunta3 = 1
     } else if (inputrespuestatrestres.checked) {
         document.getElementById("correcta3").style.background = "#8aff7ace"
@@ -77,7 +77,7 @@ function seleccionarRespuesta(){
         document.getElementById("correcta4").style.background = "#8aff7ace"
         pregunta4 = 1
     } else if (inputrespuestacuatrotres.checked) {
-        puntaje = puntaje + 2
+        puntaje = puntaje + 16
         pregunta4 = 1
     } else if (inputrespuestacuatrocuatro.checked) {
         document.getElementById("correcta4").style.background = "#8aff7ace"
@@ -95,7 +95,7 @@ function seleccionarRespuesta(){
         document.getElementById("correcta5").style.background = "#8aff7ace"
         pregunta5 = 1
     } else if (inputrespuestacincocuatro.checked) {
-        puntaje = puntaje + 2
+        puntaje = puntaje + 16
         pregunta5 = 1
     } else {
         alert("Responde la pregunta 5")
@@ -108,11 +108,9 @@ function seleccionarRespuesta(){
         document.getElementById("correcta3").style.background = "white"
         document.getElementById("correcta4").style.background = "white"
         document.getElementById("correcta5").style.background = "white"
-
     }
 
 
 }
 
 window.addEventListener('load', iniciarCuestionario)
-document.info.style.backgroundColor = "red"
