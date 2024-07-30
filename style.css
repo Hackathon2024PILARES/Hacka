@@ -1,61 +1,56 @@
 body {
-    background-color: #f0e8da;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  background-color: #f0e8da;
+  font-family: DM Sans;
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 0;
+}
+
+#encabezado{
+  height: 50%;
+}
+
+@media (max-width: 600px) {
+  /* Tamaño de letra más grande para las respuestas */
+  input[type="radio"], label {
+      font-size: 18px;
   }
-  
-  @media (max-width: 600px) {
-    /* Tamaño de letra más grande para las respuestas */
-    input[type="radio"], label {
-        font-size: 18px;
-    }
-  
-    /* Ajuste de márgenes o padding según sea necesario */
-    section {
-        margin-bottom: 20px;
-    }
-  
-    /* Ajuste para imagen si es necesario */
-    #img {
-        max-width: 100%;
-        height: auto;
-    }
+  #plaza {
+      max-width: 75%;
+      height: 75%;
   }
+}
+
   #loggin {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
-  #img {
-    width: 500px;
-    margin: 25px;
+
+  #plaza {
+    max-width: 75%;
+    height: 50%;
   }
   
   #etiquetasesion{
-    font-size: 35px;
     color:#240303;
     /*background-color: #C4847C;*/
-    padding: 10px 15px; /* Espacio interno: 10px arriba/abajo y 15px izquierda/derecha */
+    /*padding: 10px 15px;  Espacio interno: 10px arriba/abajo y 15px izquierda/derecha */
   }
   
   #pregunta{
     color: #240303;
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 100%;
+    line-height: 1.2;
   }
   .titulo{
     color:#240303;
   }
   #enviar {
-    font-family: cursive;
     font-size: 20px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: center;
     justify-content: center;
     align-items: center;
   }
@@ -67,15 +62,25 @@ body {
   #encabezado{
     display:flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     justify-content: center;
   }
 
   #logo{
     width: 300px;
+    /*background-color: aqua;*/
+    margin: -50px;
   }
 
   #logopilares{
-    width: 300px;
+    width: 100%;
     height: 200;
   }
+
+
+
+.info {
+  font-size: 100%;
+
+}
+
