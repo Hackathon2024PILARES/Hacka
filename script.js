@@ -133,7 +133,23 @@ function seleccionarRespuesta() {
     }
 
     if (pregunta1 == 1 && pregunta2 == 1 && pregunta3 == 1 && pregunta4 == 1 && pregunta5 == 1) {
-        alert("¡" + username + " has obtenido un puntaje de " + newScore + "!");
+        //alert("¡" + username + " has obtenido un puntaje de " + newScore + "!");
+        if (newScore == 20){
+            document.getElementById("puntajeveinte").style.display="block";
+        } else if (newScore == 36){
+            document.getElementById("puntajetreinta").style.display="block";
+        } else if (newScore == 52){
+            document.getElementById("puntajecincuenta").style.display="block";
+        } else if (newScore== 68){
+            document.getElementById("puntajesesenta").style.display="block";
+        } else if (newScore == 84){
+            document.getElementById("puntajeochenta").style.display="block";
+        } else if (newScore == 100){
+            document.getElementById("puntajecien").style.display="block";
+        } 
+        document.getElementById("boton-respuesta").style.display="none";
+        document.getElementById("Mensaje").style.display="block";
+        document.getElementById("botonPuntaje").style.display="block";
 
         const userRef = ref(db, 'user/' + username);
 
@@ -167,7 +183,6 @@ function seleccionarRespuesta() {
             console.error("Error al obtener los datos: ", error);
             alert("Error al obtener los datos.");
         });
-
     } else {
         document.getElementById("correcta1").style.background = "#f0e8da";
         document.getElementById("correcta2").style.background = "#f0e8da";

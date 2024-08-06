@@ -4,6 +4,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Modern+Antiqua&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <meta charset="utf-8" />
         <title>Plaza Manuel Tolsá. Cuestionario</title>
@@ -13,13 +16,11 @@
             <img id = "logo" src = "./imagenes/logohacka.png" alt="logo">
         </header>
         <section id = "loggin">
-            <h2 id="etiquetasesion">Ingresa tu nombre de usuario</h2>
-            <input id = "username" type = "text">
             <br>
+            <h1>~PLAZA MANUEL TOLSÁ~</h1>
             <img id = "plaza" src = "./imagenes/descarga.webp" alt = "plaza">
-            <p class="info">La plaza Manuel Tolsá (también plaza Tolsá) es una plaza de forma rectangular que se encuentra ubicada frente a la antigua calle de Tacuba, dentro de los límites que forman el primer cuadro del Centro Histórico de la Ciudad de México.</p>
+            <p class="info"><em>La plaza Manuel Tolsá (también plaza Tolsá) es una plaza de forma rectangular que se encuentra ubicada frente a la antigua calle de Tacuba, dentro de los límites que forman el primer cuadro del Centro Histórico de la Ciudad de México.</em></p>
             <h1 class = "titulo">¡Responde correctamente!</h1>
-
         </section>
 
 
@@ -42,6 +43,7 @@
             <br>
             <input type="radio" name="respuesta1" id="4" />
             <label for="4">D.   El Grande</label>
+        </section>
 
         <section id="seleccionar-respuesta2">
 
@@ -61,6 +63,7 @@
             <br>
             <input type="radio" name="respuesta2" id="24" />
             <label for="24">D.   Convento de San Francisco</label>
+        </section>
 
         <section id="seleccionar-respuesta3">
 
@@ -80,6 +83,7 @@
             <br>
             <input type="radio" name="respuesta3" id="34" />
             <label for="34">D.   Manuel González</label>
+        </section>
 
         <section id="seleccionar-respuesta4">
 
@@ -99,6 +103,7 @@
             <br>
             <input type="radio" name="respuesta4" id="44" />
             <label for="44">D.   El Palacio Postal</label>
+        </section>
 
         <section id="seleccionar-respuesta5">
 
@@ -118,18 +123,30 @@
             <br>
             <input type="radio" name="respuesta5" id="54" />
             <label for="54", id ="correcta5">D.   1979</label>
+        </section>
 
         <section id="enviar">
 
-            <br>
+            <p id="etiquetasesion"><strong>Ingresa tu nombre de usuario</strong></p>
+            <input id = "username" type = "text">
             <br>
             <button id="boton-respuesta">Enviar</button>
-
+                <section id = "puntajefinal">
+                    <h1 id ="Mensaje" style="display:none">¡ TU PUNTAJE ! :  </h1> 
+                    <img id = "puntajeveinte" style="display:none" src = "./imagenes/veinte.png">
+                    <img id = "puntajetreinta" style="display:none" src = "./imagenes/treinta.png">
+                    <img id = "puntajecincuenta" style="display:none" src = "./imagenes/cincuenta.png">
+                    <img id = "puntajesesenta" style="display:none" src = "./imagenes/sesenta.png">
+                    <img id = "puntajeochenta" style="display:none" src = "./imagenes/ochenta.png">
+                    <img id = "puntajecien" style="display:none" src = "./imagenes/cien.png">
+                </section>
+                <a style="display:none" target="_blank" id="botonPuntaje" href="https://angelumoca21.github.io/pruebasHackathonPuntajes/"><em>Consulta el marcador general</em></a>
+                <br>
+                <br>
+            <img id = "logopilares" src = "./imagenes/logopilares.png">
         </section>
         <script type = "module" src="./script.js"></script>
         <link rel="stylesheet" href="./style.css">
-        <footer>
-            <img id = "logopilares" src = "./imagenes/logopilares.png">
-        </footer>
+        
     </body>
 </html>
